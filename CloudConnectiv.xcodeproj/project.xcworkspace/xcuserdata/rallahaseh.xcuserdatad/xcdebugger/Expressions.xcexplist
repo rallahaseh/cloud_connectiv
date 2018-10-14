@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "MainViewController.segmentSelectionFunctionality(_:):MainViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.getData.count">
+            </PersistentString>
+            <PersistentString
+               value = "self.getData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RASegmentedControl.displayNewSelectedIndex():RASegmentedControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "selectedIndex">
+            </PersistentString>
+            <PersistentString
+               value = "selected_img_icon">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "RASegmentedControl.layoutSubviews():RASegmentedControl.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "labels">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
