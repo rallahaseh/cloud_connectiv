@@ -50,6 +50,8 @@ class MainViewController: UIViewController {
         setupView()
         setupCells()
         //
+        setFiltrationProcess(filtrationAllLocationsButton)
+        //
         getDataFromServer()
     }
     
@@ -59,7 +61,7 @@ class MainViewController: UIViewController {
     }
 
     // MARK: Buttons Functionality
-    @IBAction func filtrationButtonsFunctionality(_ sender: UIButton) {
+    func setFiltrationProcess(_ sender: UIButton){
         for view in self.filtrationStackView.subviews {
             if view is UIButton {
                 if let button:UIButton = view as? UIButton {
@@ -81,15 +83,11 @@ class MainViewController: UIViewController {
                 }
             }
         }
-//        sender.isSelected = !sender.isSelected
-//        let selectedColor: UIColor = UIColor(red: 29.0/255.0, green: 166.0/255.0, blue: 252.0/255.0, alpha: 1.0)
-//        if sender.isSelected {
-//            sender.backgroundColor = selectedColor
-//            sender.setTitleColor(.white, for: .normal)
-//        } else {
-//            sender.backgroundColor = .clear
-//            sender.setTitleColor(.lightGray, for: .normal)
-//        }
+    }
+    @IBAction func filtrationButtonsFunctionality(_ sender: UIButton) {
+        //
+        setFiltrationProcess(sender)
+        //
         switch sender.tag {
         // ALL
         case 0:
@@ -235,6 +233,12 @@ class MainViewController: UIViewController {
         self.filtrationAllLocationsButton.layer.cornerRadius = filtrationButtonCornerRadius
         self.filtrationAllLocationsButton.layer.borderWidth = filtrationButtonBorderWidth
         self.filtrationAllLocationsButton.layer.borderColor = filtrationButtonBorderColor
+        //
+        let imageView = UIImageView(frame: CGRect(x: filtrationAllLocationsButton.frame.origin.x + 70,
+                                                  y: filtrationAllLocationsButton.frame.origin.y + 5,
+                                                  width: 15, height: 15))
+        imageView.image = UIImage(named: "icon_6")
+        self.filtrationStackView.addSubview(imageView)
     }
 
     func setupCells() {

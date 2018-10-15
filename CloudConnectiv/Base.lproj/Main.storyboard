@@ -60,7 +60,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="924" height="60"/>
                                                 <subviews>
                                                     <searchBar contentMode="redraw" semanticContentAttribute="forceRightToLeft" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="qy1-Pb-7CI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="231.5" height="60"/>
                                                         <color key="barTintColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -69,18 +69,18 @@
                                                         </connections>
                                                     </searchBar>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mZc-d6-opo">
-                                                        <rect key="frame" x="241" y="0.0" width="506" height="60"/>
+                                                        <rect key="frame" x="241.5" y="0.0" width="505.5" height="60"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter by:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ix-yY-pWU">
-                                                                <rect key="frame" x="0.0" y="21" width="66" height="18"/>
+                                                                <rect key="frame" x="0.0" y="21" width="25.5" height="18"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c05-Vx-CRc">
-                                                                <rect key="frame" x="76" y="15" width="100" height="30"/>
+                                                                <rect key="frame" x="35.5" y="15" width="110" height="30"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="width" constant="100" id="X3z-Y5-Vh1"/>
+                                                                    <constraint firstAttribute="width" constant="110" id="X3z-Y5-Vh1"/>
                                                                     <constraint firstAttribute="height" constant="30" id="a7C-hg-wqd"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -92,7 +92,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KxB-Lt-cF5">
-                                                                <rect key="frame" x="186" y="15" width="100" height="30"/>
+                                                                <rect key="frame" x="155.5" y="15" width="110" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="Active">
                                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,7 +102,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AY6-9l-wIh">
-                                                                <rect key="frame" x="296" y="15" width="100" height="30"/>
+                                                                <rect key="frame" x="275.5" y="15" width="110" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <state key="normal" title="Down">
                                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,9 +111,10 @@
                                                                     <action selector="filtrationButtonsFunctionality:" destination="59i-4i-Gjt" eventType="touchUpInside" id="y90-dy-1g5"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-nx-oPv">
-                                                                <rect key="frame" x="406" y="15" width="100" height="30"/>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYd-nx-oPv">
+                                                                <rect key="frame" x="395.5" y="15" width="110" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
                                                                 <state key="normal" title="All Locations">
                                                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -202,7 +203,7 @@
                                                     <constraint firstAttribute="height" constant="60" id="zqn-M1-CLG"/>
                                                 </constraints>
                                             </stackView>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-zB-5pR">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-zB-5pR">
                                                 <rect key="frame" x="0.0" y="60" width="924" height="708"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <connections>
