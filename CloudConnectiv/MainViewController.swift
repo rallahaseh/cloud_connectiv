@@ -91,19 +91,20 @@ class MainViewController: UIViewController {
         switch sender.tag {
         // ALL
         case 0:
-            if self.tableData.count < 0 {
+            let array = isFiltering() ? filteredTableData : tableData
+            if array.count < 0 {
                 // Get Data
                 self.currentPage = 0
                 getDataFromServer()
                 // Filter Data
-                filterData(isFiltering() ? filteredTableData : tableData)
-                // Reload Data
-                DispatchQueue.main.async {
+                let deadlineTime = DispatchTime.now() + .seconds(1)
+                DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
+                    self.filterData(array)
                     self.tableView.reloadData()
                 }
             } else {
                 // Filter Data
-                filterData(isFiltering() ? filteredTableData : tableData)
+                filterData(array)
                 // Reload Data
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
